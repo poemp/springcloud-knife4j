@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: knife4j-api
+  profiles:
+    active: common
+server:
+  port: 8081
