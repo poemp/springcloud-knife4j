@@ -1,9 +1,11 @@
 spring:
   application:
     name: knife4j-base
-
   profiles:
-    active: common
-
+    include: common
+  cloud:
+    nacos:
+      config:
+        server-addr: ${global.nacos.server-addr}
 server:
   port: 8083
