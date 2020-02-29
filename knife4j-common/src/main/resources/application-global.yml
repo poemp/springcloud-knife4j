@@ -1,0 +1,12 @@
+global:
+  nacos:
+    server-addr: 127.0.0.1:8848
+  knife4j-api:
+    name: knife4j-api
+    port: 8081
+  knife4j-auth:
+    name: knife4j-auth
+    port: 8082
+  knife4j-base:
+    name: knife4j-base
+    port: 8083

@@ -1,11 +1,11 @@
 spring:
   application:
-    name: knife4j-auth
+    name: ${global.knife4j-auth.name}
   profiles:
-    include: common
+    include: global
   cloud:
     nacos:
-      config:
+      discovery:
         server-addr: ${global.nacos.server-addr}
 server:
-  port: 8082
+  port: ${global.knife4j-auth.port}
