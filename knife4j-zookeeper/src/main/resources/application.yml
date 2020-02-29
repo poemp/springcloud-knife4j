@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ${global.knife4j-zookeeper.name}
+  profiles:
+    include: global
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${global.nacos.server-addr}
+  zookeeper:
+    address: 127.0.0.1:2181
+
+server:
+  port: ${global.knife4j-zookeeper.port}

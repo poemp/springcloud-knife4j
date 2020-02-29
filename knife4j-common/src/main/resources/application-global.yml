@@ -10,3 +10,6 @@ global:
   knife4j-base:
     name: knife4j-base
     port: 8083
+  knife4j-zookeeper:
+    name: knife4j-zookeeper
+    port: 8084
