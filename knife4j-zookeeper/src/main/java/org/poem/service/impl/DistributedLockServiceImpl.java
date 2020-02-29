@@ -2,7 +2,6 @@ package org.poem.service.impl;
 
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.recipes.locks.InterProcessMultiLock;
-import org.apache.zookeeper.CreateMode;
 import org.poem.service.DistributedLockService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,7 +32,6 @@ public class DistributedLockServiceImpl implements DistributedLockService {
         logger.info("try do job for " + LOCK_PATH);
         try{
             InterProcessMultiLock lock = new InterProcessMultiLock(client, Collections.singletonList(LOCK_PATH));
-            client.create().withMode(CreateMode.EPHEMERAL).forPath(LOCK_PATH);
             if (lock.acquire(10, TimeUnit.MINUTES)){
                 try{
                     Thread.sleep(1000*5);
