@@ -12,6 +12,10 @@ knife4j的前身是`swagger-bootstrap-ui`，为了契合微服务的架构发展
 
 可以直接引用swagger-bootstrap-ui的最后一个版本1.9.6或者使用knife4j-spring-ui
 
+这个比老板的好很多 详细可以查看这个https://github.com/poemp/id-swgger-bootsrap-ui
+
+**具体的是可以直接导出pdf，html，word文档，就不需要再转换了**
+
 老版本引用
 
 ```xml
